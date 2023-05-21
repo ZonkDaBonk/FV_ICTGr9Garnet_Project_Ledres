@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seatwork 2</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<h1><center>measurement Converter for people with 1 IQ</center></h1>
+<hr>
+<center> Milimeter: <input type="number" id="mili" value=""></center>
+	<hr>
+	<button class="form-control" onclick="mili1()">To CM</button>
+	<button class="form-control" onclick="mili2()">To M</button>
+	<button class="form-control" onclick="mili3()">To KM</button>
+	<hr>
+<center> Centimeter: <input type="number" id="centi" value=""></center>
+	<hr>
+	<center>
+	<button class="form-control" onclick="centi1()">To MM</button>
+	<button class="form-control" onclick="centi2()">To M</button>
+	<button class="form-control" onclick="centi3()">To KM</button>
+	</center>
+	<hr>
+<center>  Meter: <input type="number" id="meter" value=""></center>
+	<hr>
+	<center>
+	<button class="form-control" onclick="meter1()">To MM</button>
+	<button class="form-control" onclick="meter2()">To CM</button>
+	<button class="form-control" onclick="meter3()">To KM</button>
+    </center>
+	<hr>
+<center>  Kilometer: <input type="number" id="kilo" value=""></center>
+	<hr>
+	<center>
+	<button class="form-control" onclick="kilo1()">To MM</button>
+	<button class="form-control" onclick="kilo2()">To CM</button>
+	<button class="form-control"onclick="kilo3()">To M</button>
+    </center>
+</body>
+<script type="text/javascript">
+	let x;
+	let y;
+	function mili1(){
+		let x = parseInt(document.getElementById("mili").value);
+		let y = 10;
+		alert(x / y);
+	}
+	function mili2(){
+		let x = parseInt(document.getElementById("mili").value);
+		let y = 1000;
+		alert(x / y);
+	}
+	function mili3(){
+		let x = parseInt(document.getElementById("mili").value);
+		let y = 1000000;
+		alert(x / y);
+	}
+	function centi1(){
+		let x = parseInt(document.getElementById("centi").value);
+		let y = 10;
+		alert(x * y);
+	}
+	function centi2(){
+		let x = parseInt(document.getElementById("centi").value);
+		let y = 100;
+		alert(x / y);
+	}
+	function centi3(){
+		let x = parseInt(document.getElementById("centi").value);
+		let y = 100000;
+		alert(x / y);
+	}
+	function meter1(){
+		let x = parseInt(document.getElementById("meter").value);
+		let y = 1000;
+		alert(x * y);
+	}
+	function meter2(){
+		let x = parseInt(document.getElementById("meter").value);
+		let y = 100;
+		alert(x * y);
+	}
+	function meter3(){
+		let x = parseInt(document.getElementById("meter").value);
+		let y = 1000;
+		alert(x / y);
+	}
+	function kilo1(){
+		let x = parseInt(document.getElementById("kilo").value);
+		let y = 1000000;
+		alert(x * y);
+	}
+	function kilo2(){
+		let x = parseInt(document.getElementById("kilo").value);
+		let y = 100000;
+		alert(x * y);
+	}
+	function kilo3(){
+		let x = parseInt(document.getElementById("kilo").value);
+		let y = 1000;
+		alert(x * y);
+	}
+</script>
+</html>
